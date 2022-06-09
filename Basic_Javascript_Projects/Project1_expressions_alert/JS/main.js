@@ -29,7 +29,7 @@ document.write(4*4); //This is a statement containing an expression.
 
 
 //I'm not sure I fully comprehend functions. The basic concept i think I get but the language and terms are a bit confusing
-//Don't understand the purpose of the id=Button_Text.
+//Don't understand the purpose of the id=Button_Text. !!Update: Button_Text id is simply to tell html where to print the function!
 
 
 function Its_a_function() {           //Defining a function and naming it
@@ -38,4 +38,10 @@ function Its_a_function() {           //Defining a function and naming it
     document.getElementById("Button_Text").innerHTML = str; //Putting the value
                                         //of the variable into the HTML elementFromPoint
                                         //with the "Button_Text" id
+}
+
+
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
 }
