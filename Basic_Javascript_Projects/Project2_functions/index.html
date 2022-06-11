@@ -7,16 +7,20 @@
     <body>
         <button onclick="Its_a_function()">Hit it!</button>
         <br>
-        <br>
         <p id="hit"></p>
         <br>
-        <br>
         <p id="Tie" onclick = "myFunction()">Click Here!</p>
-        
-
-
-
-
-
+        <br>
+        <p id="fave" onclick="faveColor()">here</p>
+        <br>
+        <p id="grams" onmouseover="LbsToGrams(2)">2 lbs to grams</p>
+        <br>
+        <P id="fcol"></P>
+        <br>       
+        <p id="Hi"></p>
     </body>
+    <script>document.getElementById("fcol").innerHTML= faveCol("Blue");</script>
+    <script>document.getElementById("Hi").innerHTML= myGreeting("Jason");</script>
+
+
 </html>
