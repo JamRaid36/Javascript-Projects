@@ -68,12 +68,12 @@ function Shoe(style, color, brand, material) { // object constructor function
 
 
 
-function petBreed() {
+function petBreed() { //Function for dog breed
     var breed = ", she's a toy poodle.";
     return breed
 }
 
-function myDog() { 
+function myDog() { // function that prints utilizing nested do breed function
     var dog = "My dogs name is miss Frizzle";
     petBreed();
     document.getElementById("Nested_Function").innerHTML = dog + petBreed()
