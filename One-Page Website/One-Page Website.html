@@ -7,7 +7,6 @@
 		<script src="./js/one_page_website.js" defer></script>
 	</head>
 	<body>
-	
 		<!-- NAV -->
 		<div class="wrap">
 			<div class="menu-container">
@@ -37,23 +36,68 @@
 		
 		<!-- PHOTO-GALLERY -->
 		
-			<div id="gallery">
-				<h1>Luxury Features</h1>
-				<div class="grid">
-					<img src="./images/thumb/thumbnail_1.jpg" alt="Room 1">
-					<img src="./images/thumb/thumbnail_2.jpg" alt="Room 2">	
-					<img src="./images/thumb/thumbnail_3.jpg" alt="Room 3">
-					<img src="./images/thumb/thumbnail_4.jpg" alt="Balcony Pool">					
-					<img src="./images/thumb/thumbnail_5.jpg" alt="">					
-					<img src="./images/thumb/thumbnail_6.jpg" alt="">					
-					<img src="./images/thumb/thumbnail_7.jpg" alt="">					
-					<img src="./images/thumb/thumbnail_8.jpg" alt="">				
-					<img src="./images/thumb/thumbnail_9.jpg" alt="">					
+		<div class="box" id="gallery">
+			<h1>Luxury Features</h1>
+			<!-- Images used to open the lightbox -->
+			<div class="row">
+				<div class="column">
+					<img src="./images/thumb/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="./images/thumb/thumbnail_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="./images/thumb/thumbnail_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="./images/thumb/thumbnail_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+				</div>  
+			</div>
+			<!-- The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides">
+						<div class="numbertext">1 / 4</div>
+						<img src="./images/thumb/thumbnail_wide_1.jpg" style="width:100%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">2 / 4</div>
+						<img src="./images/thumb/thumbnail_wide_2.jpg" style="width:100%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">3 / 4</div>
+						<img src="./images/thumb/thumbnail_wide_3.jpg" style="width:100%">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">4 / 4</div>
+						<img src="./images/thumb/thumbnail_wide_4.jpg" style="width:100%">
+					</div>
+					<!-- Next/previous controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					<!-- Caption text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+					<!-- Thumbnail image controls -->
+					<div class="column">
+						<img class="thumbs" src="./images/thumb/thumbnail_1.jpg" onclick="currentSlide(1)" alt="1">
+					</div>
+					<div class="column">
+						<img class="thumbs" src="./images/thumb/thumbnail_2.jpg" onclick="currentSlide(2)" alt="2">
+					</div>
+					<div class="column">
+						<img class="thumbs" src="./images/thumb/thumbnail_3.jpg" onclick="currentSlide(3)" alt="3">
+					</div>
+					<div class="column">
+						<img class="thumbs" src="./images/thumb/thumbnail_4.jpg" onclick="currentSlide(4)" alt="4">
+					</div>
 				</div>
 			</div>
-		
+		</div>
 		<!-- END OF GALLERY -->
-		
+
 		<!-- Entertainment -->
 		<div id="live">
 			<div>
@@ -107,8 +151,7 @@
 		<div>
 			www.lapoflux.lux &nbsp;|&nbsp; &copy; 2022
 		</div>
-		<!--END Footer -->
-				
+		<!--END Footer -->		
 	</body>
 </html>	
 
