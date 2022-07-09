@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $("html").append(
+            "<body>\
+                <div id= 'container'>\
+                    <div id='inner'>\
+                        <h1>Basic jQuery</h1>\
+                        <p id= '1'>Paragraph 1</p>\
+                        <p id= '2'>Paragraph 2</p>\
+                        <p id= '3'>Paragraph 3</p>\
+                        <p id= '4'>Hover here!</p>\
+                        <button id= '5'>Click Here!</button>\
+                        <button id= '6'>Hover to bring it back!</button>\
+                    </div>\
+                </div>\
+            </body>"
+        );
+        $("#2").css({"color":"red"});
+        $("#3").click(function() {
+            $("h1").hide();
+        });
+        $("#5").click(function() {//used a button to hide an element
+            $("#4").hide();
+        });
+        $("#6").hover(function() {//Used a button with hover function to bring an element back
+            $("#4").show();
+        });
+    });
+
+</script>
+</html>
