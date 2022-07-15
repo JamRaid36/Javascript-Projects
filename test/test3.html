@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/test3.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Double Click Handler</h1>
+    </header>
+    <p id="DBC" ondblclick="color_Font_Shift()">Lets change the color and font size</p>
+    
+
+    <script>
+        function color_Font_Shift() {
+           document.getElementById("DBC").style.color = "red";
+           document.getElementById("DBC").style.fontSize = "12px";
+        }
+    </script>
+</body>
+</html>

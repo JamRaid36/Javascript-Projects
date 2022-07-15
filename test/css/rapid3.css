@@ -1,0 +1,22 @@
+
+/* using keyframes for zoom in zoom out effect*/
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.single-featured-image-header img {
+    margin-top: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	animation: zoominoutsinglefeatured 15s forwards;
+}

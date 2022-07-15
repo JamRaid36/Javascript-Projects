@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="XML_Example"></p>
+<script>
+    var XML_Parser, XML_Document
+
+    //creates a text string
+    var guitarPedals = "<pedals>" +
+    "<brand>Strymon</brand>" +
+    "<name>Timeline</name>" +
+    "<type>Delay</type>" +
+    "<version>V1</version>" +
+    "</pedals>";
+
+    //creates and XML Dom parser
+    XML_Parser = new DOMParser();
+
+    //creates a new XML DOM object using the text string
+    XML_Document = XML_Parser.parseFromString(guitarPedals, "text/xml");
+
+    document.getElementById("XML_Example").innerHTML =
+    XML_Document.getElementsByTagName("brand") [0].childNodes[0].nodeValue;
+
+</script>    
+</html>

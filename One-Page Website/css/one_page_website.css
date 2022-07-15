@@ -11,7 +11,13 @@ html {
 }
 
 body {
-    margin: none;
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 .reservation input[type="text"] {

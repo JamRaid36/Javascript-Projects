@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/rapid2.css">
+    <script src="./js/rapid2.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <button class="open-button" onclick="openForm()">Open Form</button>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <div class="move">Watch me move!</div>
+
+    <div class="zoom">
+        <img class="pool" src="./images/thumbnail_wide_6.jpg" alt="">
+    </div>
+
+
+
+    
+</body>
+</html>
