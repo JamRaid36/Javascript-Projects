@@ -3,7 +3,7 @@
 
 ## Projects
 
-* [Pizza Menu](https://github.com/JamRaid36/Javascript-Projects.git)
+* [Pizza Menu](https://github.com/JamRaid36/Javascript-Projects.git/tree/main/Pizza_Project)
 * [Tic-Tac-Toe Game](https://github.com/JamRaid36/Javascript-Projects.git)
 * [Calculator](https://github.com/JamRaid36/Javascript-Projects.git)
 
